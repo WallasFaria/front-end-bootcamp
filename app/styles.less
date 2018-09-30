@@ -1,16 +1,49 @@
 @import "./stylesheets/normalize";
 
+:root {
+	--color-black: #0A1014;
+	--color-gray: #1B2329;
+	--color-mid-gray: #353F4C;
+	--color-light-gray: #7A8C99;
+	--color-white: #FFFFFF;
+	--color-default: var(--color-white);
+	--color-secundary: var(--color-light-gray);
+	--color-active: #2EC4B6;
+	--color-negative: #FF4040;
+	--color-highlight: #FF9F1C;
+	--color-disabled: var(--color-mid-gray);
+
+	--font-size: 21px;
+	--font-mid-size: calc(var(--font-size) * 1.25);
+	--font-title-size: calc(var(--font-size) * 1.5);
+	--font-super-title-size: calc(var(--font-size) * 5);
+
+	--font-weight: 400;
+	--font-mid-weight: 500;
+	--font-title-weight: 500;
+	--font-super-title-weight: 700;
+
+	--font-height: 1.5;
+	--font-mid-height: 1.4;
+	--font-title-height: 1.25;
+	--font-super-title-height: 1.1;
+
+	--transition: .25 all ease-in-out;
+}
+
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+
+a, input, button {
+	transition: var(--transition);
+}
+
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-
-#root, .App {
-  display: flex;
-  flex-wrap: nowrap;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.App {
-  flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
+	line-height: var(--font-height);
+	width: 100vw;
+	overflow-x: hidden;
 }
